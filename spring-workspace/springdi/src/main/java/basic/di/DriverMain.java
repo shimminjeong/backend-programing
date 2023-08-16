@@ -4,8 +4,12 @@ public class DriverMain {
 
 	public static void main(String[] args) {
 		
-		Car car = new Car();
-		HankookTire hankook = new HankookTire();
+		KumhoTire k=new KumhoTire();
+		Car car2=new Car(k);
+		car2.printTireBrand();
+		
+		Car car =new Car();
+		HankookTire hankook=new HankookTire();
 		KumhoTire kumho = new KumhoTire();
 		
 		car.setTire(kumho);

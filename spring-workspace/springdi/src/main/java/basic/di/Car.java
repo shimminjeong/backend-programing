@@ -5,7 +5,12 @@ public class Car {
 	private Tire tire;
 	
 	public Car() {
-		System.out.println("car()의 생성자입니다.");
+		System.out.println("car() 의 생성자입니다.");
+	}
+	
+	public Car(Tire t) {
+		this.tire=t;
+		System.out.println("car(Tire t)의 생성자입니다.");
 	}
 
 	public Tire getTire() {
@@ -13,6 +18,7 @@ public class Car {
 	}
 
 	public void setTire(Tire tire) {
+		System.out.println("setTire(Tire t)의 생성자입니다.");
 		this.tire = tire;
 	}
 	
