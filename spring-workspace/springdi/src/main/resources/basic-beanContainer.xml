@@ -7,3 +7,4 @@
         <bean id="h1" class="basic.Hello"></bean>
         <bean id="h2" class="basic.Hello"></bean>
 </beans>
+
