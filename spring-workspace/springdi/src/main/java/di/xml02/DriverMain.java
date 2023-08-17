@@ -11,6 +11,7 @@ public class DriverMain {
 //		1. setter를 이용한 주입
 		Car c1 = context.getBean("car",Car.class);
 		c1.printTireBrand();
+		System.out.println(c1.toString());
 
 	}
 
