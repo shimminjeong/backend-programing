@@ -8,14 +8,16 @@ import org.springframework.stereotype.Component;
 @Component("car")
 public class Car {
 
+	@Autowired
+	@Qualifier("h")
 	private Tire tire;
 
 	public Car() {
 		System.out.println("car() 의 생성자입니다.");
 	}
 
-	@Autowired
-	public Car(@Qualifier("h") Tire t) {
+	
+	public Car( Tire t) {
 		this.tire = t;
 		System.out.println("car(Tire t)의 생성자입니다.");
 	}
