@@ -1,6 +1,7 @@
 package di.xml01;
 
 import java.util.List;
+import java.util.Map;
 
 public class Car {
 	
@@ -8,6 +9,7 @@ public class Car {
 	private String carName;
 	private int year;
 	private List<String> driver;
+	private Map<String, String> map; 
 	
 	public Car() {
 		System.out.println("car() 의 생성자입니다.");
@@ -40,6 +42,15 @@ public class Car {
 
 	public void setDriver(List<String> driver) {
 		this.driver = driver;
+	}
+	
+
+	public Map<String, String> getMap() {
+		return map;
+	}
+
+	public void setMap(Map<String, String> map) {
+		this.map = map;
 	}
 
 	public void printTireBrand() {
