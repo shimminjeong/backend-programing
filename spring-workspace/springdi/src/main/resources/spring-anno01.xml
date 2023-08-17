@@ -10,7 +10,9 @@
 	<!-- @autowired 에 의해서 자동 주입됨 -->
 	<context:annotation-config/>
 	<bean id="car" class="di.anno01.Car"/>
+	<bean id="tire" class="di.anno01.HankookTire"/>
 	<bean id="hankookTire" class="di.anno01.HankookTire"/>
+	<bean id="kumhoTire" class="di.anno01.KumhoTire"/>
 	
 	
 </beans>
