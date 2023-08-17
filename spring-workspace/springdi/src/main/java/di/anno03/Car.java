@@ -7,7 +7,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Car {
 	
-	
+	@Qualifier("h1")
+	@Autowired
 	private Tire tire;
 
 	public Car() {
