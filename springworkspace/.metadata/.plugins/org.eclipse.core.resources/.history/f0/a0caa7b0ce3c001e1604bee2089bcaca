@@ -1,0 +1,31 @@
+package exam.ex1;
+
+public class LgTv implements Tv {
+
+	private Speaker speaker;
+
+	public LgTv() {
+		System.out.println("lgtv() 생성자");
+	}
+
+	public LgTv(Speaker speaker) {
+		this.speaker = speaker;
+		System.out.println("LgTv(Speaker speaker)의 생성자");
+	}
+
+	public void turnOn() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void turnOff() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void printSpeakerBrand() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

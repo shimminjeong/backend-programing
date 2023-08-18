@@ -8,7 +8,7 @@
       <transactionManager type="JDBC"/>
       <dataSource type="POOLED">
         <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
-        <property name="url" value="=jdbc:oracle:thin:@dinkdb_high?TNS_ADMIN=C:/SQLDEV/Wallet_DinkDB"/>
+        <property name="url" value="jdbc:oracle:thin:@dinkdb_high?TNS_ADMIN=C:/SQLDEV/Wallet_DinkDB"/>
         <property name="username" value="DA2311"/>
         <property name="password" value="Data2311"/>
       </dataSource>

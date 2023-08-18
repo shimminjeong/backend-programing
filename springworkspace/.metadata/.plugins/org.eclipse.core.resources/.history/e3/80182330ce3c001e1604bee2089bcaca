@@ -1,0 +1,30 @@
+package exam.ex1;
+
+public class LgTv implements Tv {
+
+	private Speaker speaker;
+
+	public LgTv() {
+
+	}
+
+	public LgTv(Speaker speaker) {
+		this.speaker = speaker;
+	}
+
+	public void turnOn() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void turnOff() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void printSpeakerBrand() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

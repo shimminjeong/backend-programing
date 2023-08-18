@@ -1,0 +1,20 @@
+package exam.ex1;
+
+public class XyzSpeaker implements Speaker{
+
+	public void volumneUp() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void volumneDown() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public String getBrand() {
+		// TODO Auto-generated method stub
+		return "XYZ speaker";
+	}
+
+}

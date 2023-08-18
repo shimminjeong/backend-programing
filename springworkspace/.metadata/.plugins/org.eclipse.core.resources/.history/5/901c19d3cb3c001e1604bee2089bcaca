@@ -1,0 +1,25 @@
+package exam.ex1;
+
+public class SamsungTv implements Tv{
+
+	public void turnOn() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void turnOff() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void volumneUp(int volumn) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void volumneDown(int volumn) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

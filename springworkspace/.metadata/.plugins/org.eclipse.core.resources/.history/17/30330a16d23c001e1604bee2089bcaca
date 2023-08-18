@@ -1,0 +1,44 @@
+package exam.ex1;
+
+public class SamsungTv implements Tv {
+
+	private Speaker leftSpeaker;
+	private Speaker rightSpeaker;
+
+	public SamsungTv(Speaker leftSpeaker, Speaker rightSpeaker) {
+		this.leftSpeaker = leftSpeaker;
+		this.rightSpeaker = rightSpeaker;
+	}
+
+	public Speaker getLeftSpeaker() {
+		return leftSpeaker;
+	}
+
+	public void setLeftSpeaker(Speaker leftSpeaker) {
+		this.leftSpeaker = leftSpeaker;
+	}
+
+	public Speaker getRightSpeaker() {
+		return rightSpeaker;
+	}
+
+	public void setRightSpeaker(Speaker rightSpeaker) {
+		this.rightSpeaker = rightSpeaker;
+	}
+
+	public void turnOn() {
+		System.out.println("tv turnOn");
+
+	}
+
+	public void turnOff() {
+		System.out.println("tv turnOff");
+
+	}
+
+	public void printSpeakerBrand() {
+		leftSpeaker.getBrand();
+
+	}
+
+}

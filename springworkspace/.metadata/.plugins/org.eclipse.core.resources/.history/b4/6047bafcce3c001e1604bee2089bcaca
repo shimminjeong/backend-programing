@@ -1,0 +1,34 @@
+package exam.ex1;
+
+public class LgTv implements Tv {
+
+	private Speaker leftSpeaker;
+	private Speaker rightSpeaker;
+
+	public LgTv() {
+		System.out.println("lgtv() 생성자");
+	}
+
+	public LgTv(Speaker leftSpeaker, Speaker rightSpeaker) {
+		this.leftSpeaker = leftSpeaker;
+		this.rightSpeaker = rightSpeaker;
+	}
+
+
+
+	public void turnOn() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void turnOff() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void printSpeakerBrand() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

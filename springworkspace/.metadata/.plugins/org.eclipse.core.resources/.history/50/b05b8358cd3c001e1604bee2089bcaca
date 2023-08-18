@@ -1,0 +1,10 @@
+package exam.ex1;
+
+public interface Tv extends Speaker{
+	
+	void turnOn();
+
+	void turnOff();
+
+
+}

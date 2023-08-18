@@ -1,0 +1,22 @@
+package exam.ex1;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Speaker xyzSpeaker =new XyzSpeaker();
+		Speaker abcSpeaker=new AbcSpeaker();
+
+		
+		Tv tv=new SamsungTv(abcSpeaker,xyzSpeaker);
+		tv.turnOn();
+		tv.printSpeakerBrand();
+		abcSpeaker.volumneUp();
+		xyzSpeaker.volumneUp();
+		abcSpeaker.volumneDown();
+		xyzSpeaker.volumneDown();
+		tv.turnOff();
+
+	}
+
+}

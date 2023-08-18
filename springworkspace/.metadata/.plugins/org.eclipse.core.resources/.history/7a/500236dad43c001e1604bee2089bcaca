@@ -1,0 +1,39 @@
+package di.ex1;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+import di.anno01.Car;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context= new GenericXmlApplicationContext("spring-speaker.xml");
+		
+		Tv stv=context.getBean("samsungTv",SamsungTv.class);
+		Tv ltv=context.getBean("lgTv",LgTv.class);
+		
+		Speaker xyz=context.getBean("xyzSpeaker",XyzSpeaker.class);
+		Speaker abc=context.getBean("abcSpeaker",AbcSpeaker.class);
+
+
+		Speaker xyzSpeaker = new XyzSpeaker();
+		Speaker abcSpeaker = new AbcSpeaker();
+
+		Tv tv = new SamsungTv(abcSpeaker, xyzSpeaker);
+		tv.turnOn();
+		tv.printSpeakerBrand();
+
+		System.out.println("speakerbrand : "+abcSpeaker.getBrand());
+		abcSpeaker.volumneUp();
+		abcSpeaker.volumneDown();
+
+		System.out.println("speakerbrand : "+xyzSpeaker.getBrand());
+		xyzSpeaker.volumneUp();
+		xyzSpeaker.volumneDown();
+		tv.turnOff();
+
+	}
+
+}

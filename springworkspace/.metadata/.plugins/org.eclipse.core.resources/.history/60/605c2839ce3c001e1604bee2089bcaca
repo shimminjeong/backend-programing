@@ -1,0 +1,12 @@
+package exam.ex1;
+
+public interface Tv{
+	
+	void turnOn();
+
+	void turnOff();
+	
+	void printSpeakerBrand();
+
+
+}

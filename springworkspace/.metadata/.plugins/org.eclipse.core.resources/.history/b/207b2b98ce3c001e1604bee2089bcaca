@@ -1,0 +1,21 @@
+package exam.ex1;
+
+public class AbcSpeaker implements Speaker{
+	
+	private int volumn;
+	
+	
+
+	public void volumneUp(int volumn) {
+		
+	}
+
+	public void volumneDown(int volumn) {
+		
+	}
+
+	public String getBrand() {
+		return "ABC speaker";
+	}
+
+}

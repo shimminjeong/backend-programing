@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * @author 데이터분석
+ *
+ */
+module mybatis {
+	requires org.mybatis;
+}

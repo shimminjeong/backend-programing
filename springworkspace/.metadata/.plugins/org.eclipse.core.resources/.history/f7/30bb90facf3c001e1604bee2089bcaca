@@ -1,0 +1,30 @@
+package exam.ex1;
+
+public class LgTv implements Tv {
+
+	private Speaker leftSpeaker;
+	private Speaker rightSpeaker;
+
+
+	public LgTv(Speaker leftSpeaker, Speaker rightSpeaker) {
+		this.leftSpeaker = leftSpeaker;
+		this.rightSpeaker = rightSpeaker;
+	}
+
+
+	public void turnOn() {
+		System.out.println("tv turnOn");
+
+	}
+
+	public void turnOff() {
+		System.out.println("tv turnOff");
+
+	}
+
+	public void printSpeakerBrand() {
+		leftSpeaker.getBrand();
+
+	}
+
+}

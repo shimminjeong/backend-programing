@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+	<!-- Car c1= new Car(new HankkokTire()); 생성자 주입 -->
+	<bean id="hankookTire" class="di.xml01.HankookTire"></bean>
+	<bean id="car" class="di.xml01.Car">
+		<constructor-arg ref="hankookTire"></constructor-arg>
+	</bean>
+
+	<!-- Car car1=Car("genesis",hankookTire) -->
+	<bean id="car1" class="di.xml01.Car">
+		<constructor-arg value="genesis"></constructor-arg>
+		<constructor-arg ref="hankookTire"></constructor-arg>
+	</bean>
+
+	<!-- 인자의 순서바꿔본다. -> 잘 돌아감
+		-> 생성자의 순서도 그냥 바꿔본다.
+	Car car2=Car(hankookTire,"genesis") -->
+	<bean id="car2" class="di.xml01.Car">
+		<constructor-arg ref="hankookTire"></constructor-arg>
+		<constructor-arg value="genesis"></constructor-arg>
+	</bean>
+
+
+
+</beans>

@@ -1,0 +1,11 @@
+package exam.ex1;
+
+public interface Speaker {
+	
+	void volumneUp();
+
+	void volumneDown();
+	
+	String getBrand();
+
+}

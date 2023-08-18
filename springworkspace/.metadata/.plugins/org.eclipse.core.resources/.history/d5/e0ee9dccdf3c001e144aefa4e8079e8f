@@ -1,0 +1,37 @@
+package di.ex1;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+import di.java.Config;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context= new AnnotationConfigApplicationContext(Config.class);
+		
+		Tv stv=context.getBean("samsungTv",SamsungTv.class);
+		Tv ltv=context.getBean("lgTv",LgTv.class);
+		
+		Speaker xyz=context.getBean("xyzSpeaker",XyzSpeaker.class);
+		Speaker abc=context.getBean("abcSpeaker",AbcSpeaker.class);
+
+
+		stv.turnOn();
+		stv.printSpeakerBrand();
+
+		System.out.println("speakerbrand : "+xyz.getBrand());
+		xyz.volumneUp();
+		xyz.volumneDown();
+
+		System.out.println("speakerbrand : "+abc.getBrand());
+		abc.volumneUp();
+		abc.volumneDown();
+		stv.turnOff();
+
+	}
+
+}

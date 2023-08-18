@@ -1,0 +1,12 @@
+package exam.ex1;
+
+public interface Tv {
+	
+	private Speaker speaker;
+
+	void turnOn();
+
+	void turnOff();
+
+
+}
